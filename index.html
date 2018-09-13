@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+*{
+ margin: 0;
+ padding: 0;
+}
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+ul{
+ margin: -30px 0 ; 
+}
+  a {
+    margin: -15px 45px 0;
+    display: inline;
+    color:  #bbbbbb;
+    text-decoration: none;
+  }
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  width: 100%;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+.center{
+  text-align: center; 
+}
+
+small {
+  opacity: 0;
+}
+.height{
+ height: 350px; 
+}
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://cdn1.imggmi.com/uploads/2018/9/12/28fec1b382394d833a4c7ee1cf0d31dc-full.jpg");
+  height: 350px;
+}
+.second{
+  background-image: url("https://cdn1.imggmi.com/uploads/2018/9/12/bccb13606020da933dc63eb2c7cf6146-full.jpg");
+}
+.dessert{
+  background-image: url('https://cdn1.imggmi.com/uploads/2018/9/12/f14519935da793cbc5fd34c8df76207f-full.jpg');
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  ul{
+    margin: 10px; 
+  }
+  a {
+    text-align: center;
+    margin: 8px;
+    display: inline;
+    color:  #bbbbbb;
+    text-decoration: none;
+  }
+  .first, .second, .dessert {
+    height: 220px; 
+  }
+  h1 {
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 14px;
+  }
+  #description{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+<h1>Tees Resort and Bar</h1>
+<h2>a World Class Oyo Town Hotel</h2>
+<ul>
+  <a href="#">Rooms</a>
+  <a href="#">Bar</a>
+  <a href="#">Restaurant</a>
+  <a href="#">Halls</a>
+</ul>
+</header>
+<div class="first">
+  <p>Welcome to the Home of Pleasure</p>
+</div>
+
+<div class="second">
+  <p>Rooms that beat your imagination <span class="price"></span><br />
+ </p>
+</div>
+  
+<div class="dessert">
+  <p>A restaurant that meets your satisfaction<span class="price"></span><br /></p>
+</div>
+
+<script>
+$('div').click(function() {
+  $(this).toggleClass('height');
+  })
+</script>
+
+</body>
