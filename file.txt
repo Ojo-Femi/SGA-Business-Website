@@ -1,4 +1,1 @@
-This will work. Good. And fine
-This is a good working file in a directort.
-
-Yes this is clearly a file. Go figure
+This is a file
